@@ -1,7 +1,7 @@
- int const PINKY=3;
-int const RING=5;
-int const MIDDLE=6;
-int const POINTER=9;
+int const MIDDLE=3;
+int const PINKY=5;
+int const POINTER=6;
+int const RING=9;
 
 void setup() {
   // setup code, runs once:
@@ -13,10 +13,10 @@ void setup() {
 
 void loop() {
   // continuous logic, runs as a while true loop:
-  //digitalWrite(PINKY, HIGH);
-  //delay(1000);
-  //digitalWrite(PINKY, LOW);
-  left(200,30);
+  turn_on_all();
+  delay(10);
+  turn_off_all();
+  digitalWrite(RING, LOW);
   delay(1000);
 }
 
@@ -73,13 +73,19 @@ void left(int on_time, int off_time) {
 }
 
 void right(int on_time, int off_time) {
-    analogWrite(POINTER, 1000);
+    digitalWrite(POINTER, HIGH);
     delay(on_time);
-    analogWrite(MIDDLE, 1000);
+    digitalWrite(POINTER, LOW);
+    delay(off_time);
+    digitalWrite(MIDDLE, HIGH);
     delay(on_time);
-    analogWrite(RING, 1000);
+    digitalWrite(MIDDLE, LOW);
+    delay(off_time);
+    digitalWrite(RING, HIGH);
     delay(on_time);
-    analogWrite(PINKY, 1000);
-    delay(100);
+    digitalWrite(RING, LOW);
+    delay(off_time);
+    digitalWrite(PINKY, HIGH);
+    delay(on_time);
     turn_off_all();
 }
