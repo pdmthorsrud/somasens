@@ -2,6 +2,12 @@
 
 A haptic feedback system that translates Pushbullet notifications into physical vibration patterns using Arduino-controlled motors.
 
+## Hardware Photos
+
+![Hardware Build 1](pictures/PXL_20250416_150243275.RAW-01.COVER.jpg)
+
+See the `pictures/` directory for additional photos of the hardware build.
+
 ## System Architecture
 
 ```mermaid
@@ -138,10 +144,6 @@ Key components:
 - Motor 2: Pin 5 (PWM)
 - Motor 3: Pin 6 (PWM)
 - Motor 4: Pin 9 (PWM)
-
-### Hardware Iterations
-
-The `pictures/` directory contains photos documenting the hardware development process across multiple iterations.
 
 ## Software Setup
 
