@@ -122,17 +122,26 @@ The Arduino tracks active vibration events for each motor and updates them in th
 
 ## Hardware Setup
 
-### Components
-- Arduino board (Uno, Nano, or compatible)
-- 4 vibration motors
-- Motor drivers (transistors or motor driver IC)
-- USB connection to host computer
+### Bill of Materials
+
+For a complete list of components and purchase links, see [BOM.md](BOM.md).
+
+Key components:
+- Pro Micro ATmega32U4 (USB Type-C)
+- 4x Linear vibration motors (0619AAC, 1.2V)
+- 4x IRLZ44N MOSFETs
+- 18650 battery holder
+- Supporting components (resistors, diodes, wire)
 
 ### Pin Configuration
 - Motor 1: Pin 3 (PWM)
 - Motor 2: Pin 5 (PWM)
 - Motor 3: Pin 6 (PWM)
 - Motor 4: Pin 9 (PWM)
+
+### Hardware Iterations
+
+The `pictures/` directory contains photos documenting the hardware development process across multiple iterations.
 
 ## Software Setup
 
@@ -226,7 +235,11 @@ somasens/
 ├── pushbullet_listener.py     # WebSocket listener & notification handler
 ├── haptic_hal.ino            # Arduino firmware
 ├── requirements.txt          # Python dependencies
+├── BOM.md                    # Bill of materials with component links
+├── pictures/                 # Hardware iteration photos
+├── stl/                      # 3D printable models
 ├── .env                      # API keys (not in version control)
+├── .gitignore                # Git ignore rules
 └── README.md                 # This file
 ```
 
