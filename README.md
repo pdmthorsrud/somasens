@@ -4,11 +4,11 @@ A haptic feedback system that translates Pushbullet notifications into physical 
 
 ## Hardware Photos
 
-![Hardware Build](pictures/PXL_20250331_155235801.RAW-02.ORIGINAL.dng)
+![Hardware Build](pictures/PXL_20250331_155235801.RAW-01.COVER.jpg)
 
 ![Hardware Build](pictures/PXL_20250416_150243275.RAW-01.COVER.jpg)
 
-![Hardware Build](pictures/PXL_20250305_225959627.RAW-02.ORIGINAL.dng)
+![Hardware Build](pictures/PXL_20250305_225959627.RAW-01.COVER.jpg)
 
 ## System Architecture
 
